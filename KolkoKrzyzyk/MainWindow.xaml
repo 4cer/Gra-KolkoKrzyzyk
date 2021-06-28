@@ -1,0 +1,31 @@
+﻿<Window x:Class="KolkoKrzyzyk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KolkoKrzyzyk"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="630" Width="388" ResizeMode="NoResize">
+    <Grid x:Name="theDataGrid" HorizontalAlignment="Center" Margin="0,0,0,15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="546*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Kółko i Krzyżyk" HorizontalAlignment="Center" Height="83" Margin="0,20,0,0" VerticalAlignment="Top" Width="330" FontSize="48" FontWeight="Normal" Grid.RowSpan="2"/>
+        <Button x:Name="button_1_1" Content=" " HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_1_2" Content=" " HorizontalAlignment="Center" Margin="0,105,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_1_3" Content=" " HorizontalAlignment="Left" Margin="240,105,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_2_1" Content=" " HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_2_2" Content=" " HorizontalAlignment="Center" Margin="0,215,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_2_3" Content=" " HorizontalAlignment="Left" Margin="240,215,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_3_1" Content=" " HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_3_2" Content=" " HorizontalAlignment="Center" Margin="0,321,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_3_3" Content=" " HorizontalAlignment="Left" Margin="240,321,0,0" VerticalAlignment="Top" Height="100" Width="100" FontSize="48" IsEnabled="False" Click="Buttons_Click" Grid.Row="1"/>
+        <Button x:Name="button_start" Content="START" HorizontalAlignment="Left" Height="100" Margin="10,436,0,0" VerticalAlignment="Top" Width="165" FontSize="22" Click="Button_start_Click" Grid.Row="1"/>
+        <Label x:Name="label_status" Content="Status: naciśnij START by rozpocząć grę" HorizontalAlignment="Left" Height="55" Margin="20,50,0,0" VerticalAlignment="Top" Width="330" FontSize="18" Grid.Row="1"/>
+        <RadioButton x:Name="radio_tic" Content="Kółko" HorizontalAlignment="Left" Margin="191,476,0,0" VerticalAlignment="Top" Width="99" Checked="RadioButton_Checked" FontSize="16" IsChecked="True" Grid.Row="1"/>
+        <RadioButton x:Name="radio_tac" Content="Krzyżyk" HorizontalAlignment="Left" Margin="191,501,0,0" VerticalAlignment="Top" Width="99" FontSize="16" Grid.Row="1"/>
+        <Label Content="Symbol Gracza:" HorizontalAlignment="Left" Margin="191,436,0,0" VerticalAlignment="Top" Width="149" FontSize="18" FontWeight="Bold" Grid.Row="1"/>
+
+    </Grid>
+</Window>
